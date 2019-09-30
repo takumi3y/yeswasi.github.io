@@ -1,1 +1,6 @@
-# yeswasi.github.io
+# 色んなもの置き場
+## 例えば…
+・CSS
+・HTML
+・C++
+とかです。
