@@ -6,3 +6,4 @@
 ・ショートカット
 とかです。
 # リンク集？
+[Feed43](https://feed43.com/users/yeswasi)
