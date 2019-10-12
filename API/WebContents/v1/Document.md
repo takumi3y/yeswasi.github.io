@@ -2,7 +2,7 @@
 ## 取得可能なもの(WebContents.js)
 * WebContents.UserAgent
 UserAgentを取得
-* WebContents.BrowserName
+* WebContents.BrowserName  
 ブラウザの名前
    * WebContents.is...でtrue,falseも取得可能
 ### 対応範囲(is... の ...の名前)
