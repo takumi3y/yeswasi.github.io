@@ -1,9 +1,9 @@
 //プロパティとか
 var WebContents = new Object();
 //定義
-var WebContents.UserAgent = navigator.useragent;
+    WebContents.UserAgent = navigator.useragent;
 var bname = "Not Sure";
-var WebContents.isChrome = false,
+    WebContents.isChrome = false,
     WebContents.isiOSChrome = false,
     WebContents.isEdge = false,
     WebContents.isFirefox = false,
