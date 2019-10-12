@@ -26,3 +26,5 @@ UserAgentを取得
 * Googlebot
 * Smooz  
 ※ 検出されなかった場合はisNotSureがtrueになります。
+### URL
+https://github.com/yeswasi/yeswasi.github.io/blob/master/API/WebContents/v1/Document.md
