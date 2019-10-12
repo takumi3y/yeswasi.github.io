@@ -1,8 +1,10 @@
 # WebContentsAPI
 ## 取得可能なもの(WebContents.js)
-* UserAgent
-* BrowserName
-   * is...でtrue,falseも取得可能
+* WebContents.UserAgent
+UserAgentを取得
+* WebContents.BrowserName
+ブラウザの名前
+   * WebContents.is...でtrue,falseも取得可能
 ### 対応範囲(is... の ...の名前)
 * Chrome
 * iOSChrome (iOS版Chrome)
@@ -22,4 +24,5 @@
 * AndroidApp
 * Facebook
 * Googlebot
-* Smooz
+* Smooz  
+※ 検出されなかった場合はisNotSureがtrueになります。
