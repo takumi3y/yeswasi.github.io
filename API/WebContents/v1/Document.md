@@ -18,20 +18,33 @@ UserAgentを取得
 * Safari
 * Opera
 * Sileipnir
-* Wii
-* DSi
-* 3DS
-* New3DS
-* WiiU
+* Wii※
+* DSi※
+* 3DS※
+* New3DS※
+* WiiU※
 * iOSApp(App内Safari)
 * AndroidApp
 * Facebook
 * Googlebot
 * Smooz  
-※ 検出されなかった場合はisNotSureがtrueになります。
+* PSP※  
+* PS2※
+* PS3※  
+* PS4※  
+###### 注意  
+検出されなかった場合はisNotSureがtrueになります。
 ### WebContents.UseModel
 * Windows
 * Mac
 * iPhone(開発中)
+* iPad
+* iPod
+* Android
+* Linux64  (64bit)
+* Linux32  (32bit)
+* Ubuntu  
+###### And More...  
+WebContents.BrowserNameの名前の後ろに※が付いているものも対応しています
 ### URL
 https://github.com/yeswasi/yeswasi.github.io/blob/master/API/WebContents/v1/Document.md
