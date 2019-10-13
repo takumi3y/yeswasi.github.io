@@ -36,34 +36,34 @@ function BrowserName() {
       bname = "Smooz";
       WebContents.isSmooz = true;
    } else if (ua.indexOf("PSP") > -1) {
-      bname = "PSP";
+      bname = WebContents.UseModel = "PSP";
       WebContents.isPSP = true;
    } else if (ua.indexOf("PS2") > -1){
-      bname = "Play Station 2";
+      bname = WebContents.UseModel = "Play Station 2";
       WebContents.isPS2 = true;
    } else if (ua.indexOf("PLAYSTATION 3") > -1){
-      bname = "Play Station 3";
+      bname = WebContents.UseModel = "Play Station 3";
       WebContents.isPS3 = true;
    } else if (ua.indexOf("PlayStation 4") > -1){
-      bname = "Play Station 4";
+      bname = WebContents.UseModel = "Play Station 4";
       WebContents.isPS4 = true;
    } else if (ua.indexOf("Googlebot") > -1){
       bname = "Googlebot";
       WebContents.isGooglebot = true;
    } else if (ua.indexOf("Nintendo Wii") > -1){
-      bname = "Nintendo Wii";
+      bname = WebContents.UseModel = "Nintendo Wii";
       WebContents.isWii = true;
    } else if (ua.indexOf("Nintendo DSi") > -1){
-      bname = "Nintendo DSi";
+      bname = WebContents.UseModel = "Nintendo DSi";
       WebContents.isDSi = true;
    } else if (ua.indexOf("New Nintendo 3DS") > -1){
-      bname = "New Nintendo 3DS";
+      bname = WebContents.UseModel = "New Nintendo 3DS";
       WebContents.isNew3DS = true;
    } else if (ua.indexOf("Nintendo 3DS") > -1){
-      bname = "Nintendo 3DS";
+      bname = WebContents.UseModel = "Nintendo 3DS";
       WebContents.is3DS = true;
    } else if (ua.indexOf("Nintendo WiiU") > -1){
-      bname = "Nintendo WiiU"
+      bname = WebContents.UseModel = "Nintendo WiiU"
       WebContents.isWiiU = true;
    } else if (ua.indexOf("Edge") > -1){
       bname = "Edge";
@@ -108,10 +108,31 @@ function BrowserName() {
    return bname;
 }
    WebContents.BrowserName = BrowserName();
+/*iOSVer.
+function iPodVer(){
+var iPodversion = window.navigator.userAgent.toLowerCase().match(/ipod touch; cpu iphone os (.+?) like/)[1];
+  return parseFloat(iPodversion.replace("_", ".");
+}
+function iPhoneVer(){
+var iPhoneversion = window.navigator.userAgent.toLowerCase().match(/iphone; cpu iphone os (.+?) like/)[1];
+  return parseFloat(iPhoneversion.replace("_", ".");
+}
+function iPadVer(){
+  var iPadversion = window.navigator.userAgent.toLowerCase().match(/ipad; cpu os (.+?) like/)[1];
+  return parseFloat(iPadversion.replace("_", ".");
+}
+↑不具合あり*/
 //is...
-   WebContents.isWindows = false;
-   WebContents.isMac = false;
-   WebContents.isiPhone = false;
+   WebContents.isWindows = false,
+   WebContents.isMac = false,
+   WebContents.isChromeOS = false,
+   WebContents.isUbuntu = false,
+   WebContents.isiPhone = false,
+   WebContents.isiPod = false,
+   WebContents.isiPad = false,
+   WebContents.isAndroid = false,
+   WebContents.isLinux32 = false,
+   WebContents.isLinux64 = false;
    WebContents.UseModel = "Not Sure";
 //どのモデル？
 function UseModel() {
@@ -162,5 +183,26 @@ function UseModel() {
    } else if (ua.indexOf("iPhone") > -1){
    WebContents.isiPhone = true;
    WebContents.UseModel = "iPhone";
+   } else if (ua.indexOf("iPod ") > -1){
+   WebContents.isiPod = true;
+   WebContents.UseModel = "iPod touch";
+   } else if (ua.indexOf("iPad") > -1){
+   WebContents.isiPad = true;
+   WebContents.UseModel = "iPad";
+   } else if (ua.indexOf("x86_64") > -1){
+   WebContents.isLinux64 = true;
+   WebContents.UseModel = "Linux 64bit";
+   } else if (ua.indexOf("i686") > -1){
+   WebContents.isLinux32 = true;
+   WebContents.UseModel = "Linux 32bit";
+   } else if (ua.indexOf("Linux") > -1){
+   WebContents.isAndroid = true;
+   WebContents.UseModel = "Android";
+   } else if (ua.indexOf("CrOS") > -1){
+   WebContents.isChromeOS = true;
+   WebContents.UseModel = "Chrome OS";
+   } else if (ua.indexOf("Ubuntu") > -1){
+   WebContents.isUbuntu = true;
+   WebContents.UseModel = "Ubuntu";
    }
 }
