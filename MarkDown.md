@@ -30,7 +30,7 @@ _em_
 __strong__
 ***em&strong***
 ___em&strong___
-~~s~~
+~~del~~
 ```
 ## View
 *em*  
@@ -39,7 +39,7 @@ _em_
 __strong__  
 ***em&strong***  
 ___em&strong___  
-~~s~~
+~~del~~
 # List
 ```markdown
 * li 1
