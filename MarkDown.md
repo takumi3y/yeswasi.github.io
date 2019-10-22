@@ -22,7 +22,7 @@ h1
 =====
 h2
 -----
-# Emphasis
+# Tags
 ```markdown
 *em*
 _em_
@@ -30,6 +30,7 @@ _em_
 __strong__
 ***em&strong***
 ___em&strong___
+~~s~~
 ```
 ## View
 *em*  
@@ -38,6 +39,7 @@ _em_
 __strong__  
 ***em&strong***  
 ___em&strong___  
+~~s~~
 # List
 ```markdown
 * li 1
