@@ -34,5 +34,17 @@
         "8",
         "9"
         ]
+    },
+    "mail" : {
+        "1": [
+        "abc",
+        "example",
+        "info"
+        ],
+        "2": [
+        "@localhost",
+        "@example.com"
+        "@abc.xyz"
+        ]
     }
 }
