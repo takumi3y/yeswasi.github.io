@@ -44,14 +44,19 @@
         "example",
         "info",
         "me",
-        "yes"
+        "yes",
+        "flower",
+        "bear",
+        "-_-"
         ],
         "2": [
         "@localhost",
         "@example.com",
         "@abc.xyz",
         "@coolmail.me",
-        "@gmail.com"
+        "@gmail.com",
+        "@draft.ru"
+        "@program.io"
         ]
     }
 }
