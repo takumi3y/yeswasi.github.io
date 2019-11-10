@@ -39,12 +39,16 @@
         "1": [
         "abc",
         "example",
-        "info"
+        "info",
+        "me",
+        "yes"
         ],
         "2": [
         "@localhost",
-        "@example.com"
-        "@abc.xyz"
+        "@example.com",
+        "@abc.xyz",
+        "@coolmail.me",
+        "@gmail.com"
         ]
     }
 }
